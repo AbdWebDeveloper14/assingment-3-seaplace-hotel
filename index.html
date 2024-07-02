@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seaplace hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon/bed-icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<style>
+    *{
+        /* border: 1px solid red; */
+        font-family: 'Times New Roman', Times, serif;
+    }
+    body{
+        width: 100%;
+    }
+    .mainboss{
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.4)
+    url(img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode:darken ;
+    text-align: center;
+}
+.nav-link{
+    color: rgb(10, 10, 10);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.nav-link:hover{
+    cursor: pointer;
+    color: rgb(189, 155, 92);
+    transition:0.5s ease-in-out ;
+}
+.navbartextsec{
+    margin-left: 252px;
+}
+.sight{
+    color: black;
+    font-weight: 700;
+}
+.navpart{
+    color:rgb(189, 155, 92) ;
+    cursor: pointer;
+}
+.navpart:hover{
+color: rgb(26, 26, 26);
+transition: 0.4s ease-in-out;
+}
+.mainbossfirstext{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 320px;
+}
+.mainbosssecondtext{
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    padding-top:320 ;
+    font-family: 'Times New Roman', Times, serif;
+}
+.button{
+    height: 45px;
+    width: 150px;
+    background: none;
+    color: white;
+    border: 2.5px solid rgb(189, 155, 92) ;
+    outline: none;
+    font-weight: 700;
+}
+.button:hover{
+    background-color:rgb(189, 155, 92);
+    transition: 0.5s ease-in-out;
+}
+.mainboss2{
+    height: auto;
+    width: auto;
+    background-color: aliceblue;
+    margin-top: -200px;
+   border: none;
+}
+.mainboss2 input{
+    height: auto;
+    width: 200px;
+    border: none;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+select{
+    height: 40px;
+    width: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(189, 155, 92);
+    border: none;
+    outline: none;
+    padding: 2.5px;
+}
+select:hover{
+    border: 2px solid rgb(80, 80, 80);
+    cursor: pointer;
+}
+.mainboss3{
+    height:auto;
+    width: auto;
+}
+.button1{
+    color: black;
+}
+.mainboss3part1{
+    text-align: center;
+}
+.mainboss3part2{
+    text-align: left;
+}
+.text1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(15, 15, 15);
+    font-size: 45px;
+    font-weight: 700;
+}
+.beginning{
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+}
+.yellowtext:hover{
+color:rgb(189, 155, 92) ;
+transition: 0.5s ease-in-out;
+}
+.mainboss4{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+.explore1{
+    width: auto;
+text-align: left;
+    border-radius: 5px;
+    margin: 15px;
+    
+}
+.explore2{
+    width: auto;
+    text-align: left;
+    border-radius: 5px;
+    margin: 15px;
+}
+.explore3{
+    width: auto;
+    text-align: left;
+    border-radius: 5px;
+    margin: 15px;
+}
+.bed{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+.bed:hover{
+    color: rgb(189, 155, 92) ;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.per{
+    font-weight: 700;
+    font-size: 25px;
+}
+.dollar{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+.Night{
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.now{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    margin: 2px;
+border: none;
+outline: none;
+color: rgb(189, 155, 92);
+}
+.now:hover{
+    background-color: rgb(189, 155, 92);
+    color: black;
+    transition: 0.4s ease-in-out;
+}
+.exploreimg:hover{
+transform: scale(1.05);
+z-index: 1;
+}
+.mainboss6{
+    width: 100%;
+    height: 500px;
+    background-image:
+     url(img/video-bg.png);
+     background-blend-mode:darken ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 25px;
+    
+}
+.sea{
+    color: white;
+    font-size: 40px;
+    padding-top: 230px;
+    text-align: center;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+.sea:hover{
+    color: rgb(189, 155, 92);
+    transition: 0.5s ease-in-out;
+}
+.view{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 0px;
+}
+.mainboss7{
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+.faci{
+    font-size: 45px;
+    font-weight: 700;
+}
+.mainboss8part{
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+.mainboss8part img{
+width: auto;
+}
+.mainboss9{
+    height: auto;
+    width: 100%;
+
+}
+.card1{
+    height: 200px;
+    width: 410px;
+    text-align: left;
+    /* margin-left: 25px; */
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+.card1:hover{
+color: #fff;
+background-color: rgb(189, 155, 92);
+cursor: pointer;
+transition: 0.5s ease-in-out;
+}
+.mainboss10{
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+.Guesttext{
+    font-size: 35px;
+    font-weight: 700;
+    color: black;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  text-align: center;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.testimonial1{
+    height: 100px;
+    width: 100px;
+}
+.sildertext{
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-weight: 700;
+}
+.silder1{
+text-align: center;
+}
+.slidrecenter{
+    text-align: center;
+}
+.mainboss11{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+.tipped{
+color: rgb(189, 155, 92);
+font-family: 'Times New Roman', Times, serif;
+text-decoration: none;
+font-size: 25px;
+font-weight: 700;
+}
+.tipped:hover{
+    color: black;
+    text-decoration: none;
+}
+.aA{
+color: black;
+text-decoration: none;
+font-size: 25px;
+font-weight: 700;
+}
+.aA:hover{
+    color: rgb(189, 155, 92);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.li{
+list-style-type: none;
+margin-left: none;
+}
+.litext{
+    color: gray;
+}
+.atextli{
+    text-decoration: none;
+    font-weight: 700;
+}
+.thoughts{
+    color: rgb(83, 83, 83);
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(6, 17, 31);
+    text-align: center;
+}
+.div{
+    text-align: left;
+}
+.topu{
+    color: white;
+    font-weight: 700;
+}
+.footertext{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+}
+.footertext:hover{
+    color: rgb(189, 155, 92);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.input{
+height: 50px;
+width: 600px;
+background-color: rgb(59, 68, 80);
+font-weight: 0;
+border: none;
+outline: none;
+}
+::placeholder{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.subscribe{
+    background-color: rgb(189, 155, 92);
+    color: white;
+    height: 40px;
+    width: 300px;
+left: -10px;
+border: none;
+outline: none;
+margin-left: -50px;
+}
+.Copyright{
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.icon{
+    height: 40px;
+    width: 40px;
+    background-color: #6a6c74;
+    padding: 5px;
+    text-align: center;
+}
+.icon:hover{
+    background-color: rgb(189, 155, 92);
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <div class="d-block">
+                <a class="navbar-brand" href="#"><img src="img/Logo.png" alt="" height="55px" width="250px" class="ms-5"></a>
+                
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class=" container-fluid d-block d-lg-flex navbartextsec">
+                <div class="col-12 col-lg-2 navpart ">
+                    <p>Have any question?</p>
+                    <p>Free:  <span class="sight">+12 365 5233</span></p>
+                </div>
+                <div class="col-12 col-lg-12 navpart ">
+                    <p>Have any question?</p>
+                    <p>Free:  <span class="sight">+12 365 5233</span></p>
+                </div>
+                </div>
+          </div>
+        </div>
+      </nav>
+
+<div class="container-fluid mainboss">
+<p class="mainbossfirstext">SEE WHAT A DIFFERENCE A STAY MAKES</p>
+<p class="mainbosssecondtext">LUXURY IS PERSONAL</p>
+<button class="button">BOOK NOW</button>
+</div> 
+<center>
+
+    <div class="container-fluid mainboss2 p-5">
+        <div>
+            <input type="text" class="m-3" placeholder="Enter your Keywords">
+            <select name="" id="">
+                <option value="">Arrival</option>
+                <option value="">8am</option>
+                <option value="">12pm</option>
+            </select>
+            <select name="" id="">
+                <option value="">Number of rooom</option>
+                <option value="">2</option>
+                <option value="">4</option>
+            </select>
+        </div>
+        <div>
+            <select name="" id="">
+                <option value="">8am</option>
+                <option value="">12pm</option>
+            </select>        <select name="" id="">
+                <option value="">Adult</option>
+                <option value="">8am</option>
+                <option value="">12pm</option>
+            </select>        <select name="" id="">
+                <option value="">child</option>
+                <option value="">8am</option>
+                <option value="">12pm</option>
+            </select>
+            <button class="button button1">Check Avaibility</button>
+        </div>
+    </div>
+</center>
+    <div class="container-fluid mainboss3 d-block d-lg-flex pt-2">
+        <div class="col-12 col-lg-4 mainboss3part1">
+        <div class="d-block">
+            <div class="">
+                <img src="img/welcomeBanner1.png" alt="" height="150px" width="150px" class="">
+                <img src="img/welcomeBanner2.png.webp" alt=""height="150px" width="150px" class="m-0">
+            </div>
+            <div>
+                <img src="img/welcomeBanner3.png.webp" alt="" height="150px" width="300px">
+            </div>
+        </div>
+        </div>
+        <div class="col-12 col-lg-8 mainboss3part2"> <p class="text1"> <span class="yellowtext">Welcome</span> <br>
+            to our residence</p>
+        <p  class="beginning navpart">Beginning blessed second a creepeth. Darkness wherein fish   <br>  years good air whose after seed appear midst evenin, appear <br> void give third bearing divide one so blessed  moved <br> firmament gathered</p>
+    </div>
+    </div>
+    <div class="container-fluid mt-5 mainboss4">
+<div class="sec1">
+<p><img src="img/icon/bed-icon.png" alt="" height="50px" width="60px"></p>
+<p class="text1">Explore our <span class="yellowtext">rooms</span></p>
+</div>
+    </div>
+
+    <section class="section-margin">
+        <div class="container">
+        <div class="section-intro text-center pb-80px">
+        </div>
+        <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+        <div class="card card-news">
+        <div class="card-news__img">
+        <img class="card-img" src="img/explore1.png.webp" alt>
+        </div>
+        <div class="card-body">
+            <div class=" d-flex"><p class="dollar">$150.00 </p><p class="per m-1 ">/</p><p class="Night m-1">Per Night</p></div>
+      <div class="tipped"><p>Classic Bed Room</p>  </div>
+        <p class="thoughts">Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed</p>
+        <a href="#" class="aA">Read More <i class="ti-arrow-right"></i></a>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+        <div class="card card-news">
+        <div class="card-news__img">
+        <img class="card-img" src="img/explore2.png.webp" alt>
+        </div>
+        <div class="card-body">
+            <div class=" d-flex"><p class="dollar">$170.00 </p><p class="per m-1 ">/</p><p class="Night m-1">Per Night</p></div>
+      <div class="tipped"><p>Premium Room</p>  </div>
+        <p class="thoughts">Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed</p>
+        <a href="#" class="aA">Read More <i class="ti-arrow-right"></i></a>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+        <div class="card card-news">
+        <div class="card-news__img">
+        <img class="card-img" src="img/explore3.png.webp" alt>
+        </div>
+        <div class="card-body">
+            <div class=" d-flex"><p class="dollar">$190.00 </p><p class="per m-1 ">/</p><p class="Night m-1">Per Night</p></div>
+      <div class="tipped"><p>Family Room</p>  </div>
+        <p class="thoughts">Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed</p>
+        <a href="#" class="aA">Read More <i class="ti-arrow-right"></i></a>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </section>
+   <div class="container-fluid mainboss6">
+<p class="sea">Sea place</p>
+<p class="view">View four has said does men saw find dear shy talen</p>
+   </div>
+   <div class="mainboss7">
+<img src="img/icon/bed-icon.png" alt="" height="40px" width="70px" class="mt-5 mb-2">
+<p class="faci">Special Facilities</p>
+   </div>    
+<div class="mainboss8part container-fluid">
+     <center><img src="img/swiming.webp" alt="" class="img-fluid"></center>
+</div>
+<br>
+<div class="mainboss9 d-block d-lg-flex p-0 p-lg-5">
+<div class="col-12 col-lg-4">
+    <div class="card1 ms-0 ms-lg-5">
+        <div class="d-flex "><img src="img/icon/house-solid (3).svg" alt="" height="30px" width="30px"> <p class="ms-3 imgofcard">Conference Room</p></div>
+        <p class="">Built purse maids cease her ham new <br> seven among and. Pulled coming wooded <br>tended it answer remain</p>
+    </div>
+</div>
+<div class="col-12 col-lg-4">
+    <div class="card1 ms-0 ms-lg-5">
+        <div class="d-flex"><img src="img/icon/bell-regular (1).svg" alt="" height="30px" width="30px"> <p class="ms-3 imgofcard">Swimming Pool</p></div>
+        <p class="">Built purse maids cease her ham new <br> seven among and. Pulled coming wooded <br>tended it answer remain</p>
+    </div>
+</div>
+<div class="col-12 col-lg-4 ">
+    <div class="card1 ms-0 ms-lg-5">
+        <div class="d-flex "><img src="img/icon/car-solid.svg" alt="" height="30px" width="30px"> <p class="ms-3 imgofcard">Sports Culb</p></div>
+        <p class="">Built purse maids cease her ham new <br> seven among and. Pulled coming wooded <br>tended it answer remain</p>
+    </div>
+</div>
+</div>
+<div class="mainboss10 container-fluid mt-5">
+<img src="img/icon/bed-icon.png" alt="">
+<p class="mt-3 Guesttext">Our Guest Love Us</p>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade  slidrecenter container-fluid text-align">
+        <div class="d-flex">
+            <div class="d-flex silder1">
+            <div class="d-block">
+                <img src="img/testimonial1.png" class="testimonial1">
+                <p class="sildertext">Adam pallin</p>
+            </div>
+                <p class="sildertext ms-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                    Tempore labore nobis cumque, quae nihil sint numquam <br> quaerat 
+                    officiis, necessitatibus aliquid atque tenetur,</p>
+                </div>
+                </div>
+
+    </div>
+  
+    <div class="mySlides fade slidrecenter container-fluid text-align">
+       <div class="d-block d-lg-flex">
+           <div class="d-flex slidre1 ">
+            <div class="d-block">
+                <img src="img/testimonial2.png" class="testimonial1">
+                <p class="sildertext">Adam pallin</p>
+            </div>
+               <p class="sildertext ms-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                Tempore labore nobis cumque, quae nihil sint numquam <br> quaerat 
+                officiis, necessitatibus aliquid atque tenetur,</p>
+            </div>
+       </div>
+
+    </div>
+  
+    <div class="mySlides fade slidrecenter container-fluid text-align">
+        <div class="d-block d-lg-flex">
+            <div class="d-flex slidre1 ">
+                <div class="d-block">
+                    <img src="img/testimonial3.png.webp" class="testimonial1">
+                    <p class="sildertext">Adam pallin</p>
+                </div>
+                <p class="sildertext ms-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                 Tempore labore nobis cumque, quae nihil sint numquam <br> quaerat 
+                 officiis, necessitatibus aliquid atque tenetur, <br> </p>
+             </div>
+        </div>
+
+    </div>
+  
+
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+ <section class="section-margin mb-5">
+    <div class="container">
+    <div class="section-intro text-center pb-80px">
+    <div class="section-intro__style mt-5 ">
+    <img src="img/icon/bed-icon.png" alt="" class="mb-0">
+    </div>
+    <h2>News & Events</h2>
+    </div>
+    <div class="row">
+    <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+    <div class="card card-news">
+    <div class="card-news__img">
+    <img class="card-img" src="img/explore1.png.webp" alt>
+    </div>
+    <div class="card-body">
+    <p class="tipped"><a href="#" class="aA mb-5">Hotel companies tipped the scales</a></p>
+    <ul class="card-news__info d-flex mt-4">
+    <li class="ms-2 li"><a href="# " class="atextli"><span class="news-icon"><i class="ti-notepad"></i></span><span class="litext"> 20th Nov, 2018</span></a></li>
+    <li class="ms-2 li"><a href="# " class="atextli"><span class="news-icon"><i class="ti-comment"></i></span><span class="litext"> 03 Comments </span></a></li>
+    </ul>
+    <p class="thoughts">Not thoughts all exercise blessing Indulgence way everything joy alteration boisterous the attachment party we years to order</p>
+    <a href="#" class="aA">Read More <i class="ti-arrow-right"></i></a>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+    <div class="card card-news">
+    <div class="card-news__img">
+    <img class="card-img" src="img/explore2.png.webp" alt>
+    </div>
+    <div class="card-body">
+    <h4 class=""><a href="#" class="aA">Try your hand inaugural industry crossword</a></h4>
+    <ul class=" d-flex ">
+    <li class="li ms-2"><a href="#" class="atextli"><span class="news-icon"><i class="ti-notepad"></i></span> <span class="litext">20th Nov, 2018</span></a></li>
+    <li class="li ms-2"><a href="#" class="atextli"><span class="news-icon"><i class="ti-comment"></i></span> <span class="litext">03 Comments </span></a></li>
+    </ul>
+    <p class="thoughts">Not thoughts all exercise blessing Indulgence way everything joy alteration boisterous the attachment party we years to order</p>
+    <a  href="#" class="aA">Read More <i class="ti-arrow-right"></i></a>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+    <div class="card card-news">
+    <div class="card-news__img">
+    <img class="card-img" src="img/explore3.png.webp" alt>
+    </div>
+    <div class="card-body">
+    <h4 class="card-news__title"><a href="#" class="aA">Hoteliers resolve to invest in guests</a></h4>
+    <ul class="card-news__info d-flex mt-4 ">
+    <li class="ms-2 li"><a href="#" class="atextli"><span class="news-icon"><i class="ti-notepad"></i></span> <span class="litext">20th Nov, 2018</span></a></li>
+    <li class="ms-2 li"><a href="#" class="atextli"><span class="news-icon"><i class="ti-comment"></i></span> <span class="litext">03 Comments </span></a></li>
+    </ul>
+    <p class="thoughts">Not thoughts all exercise blessing Indulgence way everything joy alteration boisterous the attachment party we years to order</p>
+    <a  href="# " class="aA">Read More <i class="ti-arrow-right"></i></a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <footer>
+        <div class="container-fluid footer d-block  d-lg-block p-2 p-lg-5 section-margin">
+<div class="col-12 d-block d-lg-flex ">
+    <div class="col-xl-2 col-sm-6 mb-4 mb-xl-0 div p-0 ps-lg-5 pe-0 pe-lg-0">
+        <h4 class="topu ms-5">Top products</h4>
+        <p class="footertext ms-5">Managed Website</p>
+        <p class="footertext ms-5">Manage Reputation</p>
+        <p class="footertext ms-5">Power Tools</p>
+        <p class="footertext ms-5">Marketing Service</p>
+</div>
+<div class="col-xl-2 col-sm-6 mb-4 mb-xl-0 div p-0 ps-lg-5 pe-0 pe-lg-0">
+    <h4 class="topu ms-5">Quick links</h4>
+    <p class="footertext ms-5">Jobs</p>
+    <p class="footertext ms-5">Brand Assest</p>
+    <p class="footertext ms-5">Investor Relations</p>
+    <p class="footertext ms-5">Trems of services</p>
+</div>
+<div class="col-xl-2 col-sm-6 mb-4 mb-xl-0 div p-0 ps-lg-5 pe-0 pe-lg-0">
+    <h4 class="topu ms-5">Features</h4>
+    <p class="footertext ms-5">Jobs</p>
+    <p class="footertext ms-5">Brand Assest</p>
+    <p class="footertext ms-5">Investor Relations</p>
+    <p class="footertext ms-5">Trems of services</p>
+</div>
+<div class="col-xl-2 col-sm-6 mb-4 mb-xl-0 div p-0 ps-lg-5 pe-0 pe-lg-0">
+    <h4 class="topu ms-5">Resources</h4>
+    <p class="footertext ms-5">Guides</p>
+    <p class="footertext ms-5">Experts</p>
+    <p class="footertext ms-5">Research</p>
+    <p class="footertext ms-5">Agencies</p>
+</div>
+<div class="col-xl-2 col-sm-6 mb-4 mb-xl-0 div p-0 ps-lg-5 pe-0 pe-lg-0">
+    <h4 class="topu ms-5">Newsletter</h4>
+    <p class="footertext ms-5">You can trust us . we only send promo offers,</p>
+    <div class="d-flex ms-5">
+        <input type="text" class="input" placeholder="Your Email Address">
+        <button type="submit" class="subscribe mt-1">Subscribe</button>
+    </div>
+</div>
+</div>
+<div class="d-block d-lg-flex text-center mt-5 footerlast">
+<div class="Copyright col-12 col-lg-6">Copyright ©2024 All rights reserved | This template is made with <img  class="m-2" src="img/icon/heart-solid.svg" alt="" height="30px"
+    width="30px"> by  <span class="footertext">Muhammad Abdullah</span>
+</div>
+<div class=" col-12 col-lg-6 d-flex">
+    <div class="icon m-2"><img src="img/icon/facebook-f.svg" alt="" height="20px" width="20px" class=" mt-1"></div>
+    <div class="icon m-2"><img src="img/icon/twitter (4).svg" alt="" height="20px" width="20px" class=" mt-1 "></div>
+    <div class="icon m-2"><img src="img/icon/instagram (6).svg" alt="" height="20px" width="20px" class="mt-1 me-1"></div>
+    <div class="icon m-2"><img src="img/icon/linkedin-in.svg" alt="" height="20px" width="20px" class="mt-1 me-1"></div>
+</div>
+</div>
+</div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="web.js"></script>
+</body>
+</html>
